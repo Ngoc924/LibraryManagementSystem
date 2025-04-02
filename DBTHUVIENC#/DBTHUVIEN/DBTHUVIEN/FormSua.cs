@@ -293,9 +293,9 @@ namespace DBTHUVIEN
             openFile.RestoreDirectory = false;
             if (openFile.ShowDialog() == DialogResult.OK)
             {
-                bunifuPictureBox1.ImageLocation = openFile.FileName;
-                bunifuPictureBox1.Text = openFile.FileName;
-                txtHinhAnh.Text = openFile.FileName;
+                // bunifuPictureBox1.ImageLocation = openFile.FileName;
+                // bunifuPictureBox1.Text = openFile.FileName;
+                // txtHinhAnh.Text = openFile.FileName;
             }
             
         }
