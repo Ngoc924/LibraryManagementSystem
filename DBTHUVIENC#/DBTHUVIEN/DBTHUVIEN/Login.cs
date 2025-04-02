@@ -24,16 +24,16 @@ namespace DBTHUVIEN
 
         private void BunifuFlatButton1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            FormDangNhapUser dnUser = new FormDangNhapUser();
-            dnUser.Show();
+            // this.Hide();
+            // FormDangNhapUser dnUser = new FormDangNhapUser();
+            // dnUser.Show();
         }
 
         private void BunifuFlatButton2_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            FormDangNhapAdmin dnAdmin = new FormDangNhapAdmin();
-            dnAdmin.Show();
+            // this.Hide();
+            // FormDangNhapAdmin dnAdmin = new FormDangNhapAdmin();
+            // dnAdmin.Show();
         }
     }
 }
