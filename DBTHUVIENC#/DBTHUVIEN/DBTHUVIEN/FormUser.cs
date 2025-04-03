@@ -152,11 +152,11 @@ namespace DBTHUVIEN
         {
             if (ktra())
             {
-                // con.Database.ExecuteSqlCommand("exec usp_MatKhau_Update @MaDG = '" + FormDangNhapUser.MaDG + "', @MatKhau ='" + MD5.CreateMD5(txtmkmoi.Text) + "'");
-                // MessageBox.Show("Cập nhật thông tin thành công");
-                // var dataDS = con.Database.SqlQuery<LAYTHONGTIN>("EXEC usp_LayThongTin @MaDG = '" + FormDangNhapUser.MaDG + "'").ToList();
-                // textdn.Text = dataDS[0].TENDANGNHAP.ToString();
-                // textmk.Text = dataDS[0].MATKHAU.ToString();
+                con.Database.ExecuteSqlCommand("exec usp_MatKhau_Update @MaDG = '" + FormDangNhapUser.MaDG + "', @MatKhau ='" + MD5.CreateMD5(txtmkmoi.Text) + "'");
+                MessageBox.Show("Cập nhật thông tin thành công");
+                var dataDS = con.Database.SqlQuery<LAYTHONGTIN>("EXEC usp_LayThongTin @MaDG = '" + FormDangNhapUser.MaDG + "'").ToList();
+                textdn.Text = dataDS[0].TENDANGNHAP.ToString();
+                textmk.Text = dataDS[0].MATKHAU.ToString();
             }
         }
 
